@@ -7,11 +7,7 @@ async def get_foo(foo):
 
 
 async def set_bar(bar):
-    print(bar)
-
-
-async def do_numbers(numbers):
-    print(int(numbers))
+    return(bar)
 
 
 async def main():
@@ -30,8 +26,6 @@ async def main():
         await get_foo(args.switch)
     elif args.switch == "bar":
         await set_bar(args.switch)
-    elif args.switch == "1234":
-        await do_numbers(args.switch)
     else:
         print("nope")
 
